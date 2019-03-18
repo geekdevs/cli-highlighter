@@ -4,14 +4,8 @@
   "type": "library",
   "require": {
     "symfony/yaml": "^4.2",
-    "scrivo/highlight.php": "dev-master#a918364d874a36b1c627a616ed72d564217ce452"
+    "geekdevs/highlight.php": "^v9.15.6.1"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/geekdevs/highlight.php"
-    }
-  ],
   "autoload": {
     "psr-4": {
       "CliHighlighter\\": "src/"

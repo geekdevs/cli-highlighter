@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d165b0cbec316a9f3f2a4ea3743eb75d",
+    "content-hash": "0dd616362e6d22620477ef94b385f7fb",
     "packages": [
         {
-            "name": "scrivo/highlight.php",
-            "version": "dev-master",
+            "name": "geekdevs/highlight.php",
+            "version": "v9.15.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/geekdevs/highlight.php.git",
-                "reference": "a918364d874a36b1c627a616ed72d564217ce452"
+                "reference": "939299024411d08210371e7148f2feaee4ca8807"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/geekdevs/highlight.php/zipball/a918364d874a36b1c627a616ed72d564217ce452",
-                "reference": "a918364d874a36b1c627a616ed72d564217ce452",
+                "url": "https://api.github.com/repos/geekdevs/highlight.php/zipball/939299024411d08210371e7148f2feaee4ca8807",
+                "reference": "939299024411d08210371e7148f2feaee4ca8807",
                 "shasum": ""
             },
             "require": {
@@ -34,11 +34,7 @@
                     "Highlight\\": ""
                 }
             },
-            "scripts": {
-                "test": [
-                    "phpunit -v"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -67,11 +63,7 @@
                 "highlight.php",
                 "syntax"
             ],
-            "support": {
-                "issues": "https://github.com/scrivo/highlight.php/issues",
-                "source": "https://github.com/scrivo/highlight.php"
-            },
-            "time": "2019-03-18T09:02:03+00:00"
+            "time": "2019-03-18T09:49:50+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -194,9 +186,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "scrivo/highlight.php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
