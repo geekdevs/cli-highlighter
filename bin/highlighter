@@ -28,7 +28,7 @@ $options = [
 
 $highlighter = new \CliHighlighter\Service\Highlighter($options);
 
-$format = $argv[1] ?? null;
+$format = $argv[1] ?? '';
 $input = stream_get_contents(STDIN);
 
 try {

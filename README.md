@@ -58,16 +58,16 @@ echo $highlighter->highlight($input, 'yaml');
 
 ### Use as console tool
 
-You can use `bin/highlighter` script with preconfigured colors for json, xml, yaml. Like this 
+You can use `vendor/bin/highlighter` script with preconfigured colors for json, xml, yaml. Like this 
 
 ```
-bin/highlighter json < input.json
-bin/highlighter xml < input.xml
-bin/highlighter yaml < yaml.xml
+vendor/bin/highlighter json < input.json
+vendor/bin/highlighter xml < input.xml
+vendor/bin/highlighter yaml < yaml.xml
 ```
 
 Alternativelym you can pipe this command like so:
 
 ```
-echo "<hello name=\"world\" />" | bin/highlighter xml
+echo "<hello name=\"world\" />" | vendor/bin/highlighter xml
 ```
