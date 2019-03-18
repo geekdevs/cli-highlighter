@@ -11,6 +11,7 @@
       "CliHighlighter\\": "src/"
     }
   },
+  "bin": ["bin/highlighter"],
   "authors": [
     {
       "name": "Pavel Dubinin",
