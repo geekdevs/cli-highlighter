@@ -1,0 +1,26 @@
+{
+  "name": "geekdevs/cli-highlighter",
+  "description": "Library which is used to colorize syntax of xml, yaml and json in console.",
+  "type": "library",
+  "require": {
+    "symfony/yaml": "^4.2",
+    "scrivo/highlight.php": "dev-master#a918364d874a36b1c627a616ed72d564217ce452"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/geekdevs/highlight.php"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CliHighlighter\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Pavel Dubinin",
+      "email": "geekdevs@gmail.com"
+    }
+  ]
+}

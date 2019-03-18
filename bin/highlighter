@@ -1,0 +1,38 @@
+#!/usr/bin/env php
+<?php
+require __DIR__.'/../vendor/autoload.php';
+
+$options = [
+    'json' => [
+        'keys'   => 'magenta',
+        'values' => 'green',
+        'braces' => 'light_white',
+    ],
+
+    'xml' => [
+        'elements'   => 'yellow',
+        'attributes' => 'green',
+        'values'     => 'green',
+        'innerText'  => 'light_white',
+        'comments'   => 'gray',
+        'meta'       => 'yellow',
+    ],
+
+    'yaml' => [
+        'separators' => 'blue',
+        'keys'       => 'yellow',
+        'values'     => 'light_white',
+        'comments'   => 'gray',
+    ],
+];
+
+$highlighter = new \CliHighlighter\Service\Highlighter($options);
+
+$format = $argv[1] ?? null;
+$input = stream_get_contents(STDIN);
+
+try {
+    echo $highlighter->highlight($input, $format);
+} catch (\CliHighlighter\Exception\UnsupportedFormatException $e) {
+    fwrite(STDERR, $e->getMessage());
+}
